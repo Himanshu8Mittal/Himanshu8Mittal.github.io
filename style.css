@@ -118,3 +118,9 @@ ul{
     justify-content: center;
     color: rgb(28 233 108);
 }
+@media (max-width:675px){
+    label{
+        /* width: auto; */
+        padding-left: 0px;
+    }
+}
