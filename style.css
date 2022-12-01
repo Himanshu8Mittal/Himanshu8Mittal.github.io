@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(0, 0, 0, 0.5) url('bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.navbar{
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.5) url('bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+ul{
+    padding: 20px;
+}
+.item{
+    display: inline;
+    padding-top: 20px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(254, 172, 172);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 40px;
+    margin: 20px;
+}
+li a:hover{
+    color: rgb(187, 18, 239);
+}
+.head{
+    display: flex;
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+    justify-content: center;
+    color: rgb(9, 246, 9);
+}
+.start{
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+label{
+    padding: 20px;
+    padding-left: 223px;
+    font-size: 20px;
+    justify-content: center;
+    color: blanchedalmond;
+}
+select{
+    width: 7vw;
+    height: 3vh;
+    border-radius: 20px;
+}
+select:hover{
+    font-weight: bold;
+}
+#grades{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#gradesee{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 10vw;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+ul{
+    list-style: none;
+}
+#grades ul li{
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(100, 180, 250);
+    font-weight: bold;
+}
+#gradesee ul li{
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(100, 180, 250);
+    font-weight: bold;
+}
+.btn{
+    width: 90px;
+    height: 30px;
+    border: 2px solid rgb(29, 194, 29);
+    border-radius: 10px;
+    background-color: rgb(254, 4, 4);
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+.btn:hover{
+    color: rgb(2, 49, 2);
+    background-color: rgb(106, 235, 235);
+}
+.spi{
+    font-size: 35px;
+    margin: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: rgb(28 233 108);
+}
+.cpi{
+    font-size: 35px;
+    margin: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: rgb(28 233 108);
+}

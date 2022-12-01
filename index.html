@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPI/CPI Calculator IITK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="list">
+            <li class="item"><a href="">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <header class="head">
+        SPI/CPI Calculator
+    </header>
+    <div class="form">
+        <form action="">
+            <div class="start">
+                <label for="Sem no.">Semester: </label>
+                <select name="num" id="num">
+                    <option value="3"><a href="#">3</a></option>
+                </select>
+                <label for="CPI/SPI">SPI/CPI: </label>
+                <select name="type" id="btns">
+                    <option value="spi">SPI</option>
+                    <option value="cpi">CPI</option>
+                </select>
+                <label for="Dep">Department: </label>
+                <select name="dep" id="dep">
+                    <option value="0">Select Branch</option>
+                    <option value="10">Aerospace</option>
+                    <option value="9">Electrical</option>
+                </select>
+            </div>
+            <div id="grades">
+                <h1><font color="pink">Aerospace Engineering</font></h1>
+                <ul class="semsub" id="ae">
+                    <li>ESO204:
+                        <select name="type" id="ESO204">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*">A/A*</option>
+                            <option value="9" class="B+">B+</option>
+                            <option value="8" class="B">B</option>
+                            <option value="7" class="C+">C+</option>
+                            <option value="6" class="C">C</option>
+                            <option value="5" class="D+">D+</option>
+                            <option value="4" class="D">D</option>
+                            <option value="0" class="E">E</option>
+                            <option value="0" class="F">F</option>
+                        </select>
+                    </li>
+                    <li>MSO202:
+                        <select name="type" id="MSO202">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                    <li>MSO203:
+                        <select name="type" id="MSO203">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                    <li>AE201:
+                        <select name="type" id="AE201">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                    <li>ESO209:
+                        <select name="type" id="ESO209">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                    <li>TA202:
+                        <select name="type" id="TA202">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                    <li>HSS:
+                        <select name="type" id="HSS">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div id="gradesee">
+                <h1><font color="pink">Electrical Engineering</font></h1>
+                <ul class="semsub" id="ee">
+                    <li>ESO:
+                        <select name="type" id="ESO">
+                            <option>Select ESO</option>
+                            <option value="11" class="A/A*">ESO201</option>
+                            <option value="11" class="B+">ESO202</option>
+                            <option value="14" class="B">ESO203</option>
+                            <option value="11" class="C+">ESO204</option>
+                            <option value="14" class="C">ESO205</option>
+                            <option value="9" class="D+">ESO206</option>
+                            <option value="12" class="D">ESO207</option>
+                            <option value="11" class="E">ESO208</option>
+                            <option value="8" class="F">ESO209</option>
+                            <option value="9" class="F">ESO213</option>
+                        </select>
+                        <select name="type" id="ESO grade">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*">A/A*</option>
+                            <option value="9" class="B+">B+</option>
+                            <option value="8" class="B">B</option>
+                            <option value="7" class="C+">C+</option>
+                            <option value="6" class="C">C</option>
+                            <option value="5" class="D+">D+</option>
+                            <option value="4" class="D">D</option>
+                            <option value="0" class="E">E</option>
+                            <option value="0" class="F">F</option>
+                        </select>
+                    </li>
+                    <li>MSO202:
+                        <select name="type" id="MSO202A">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                    <li>MSO203:
+                        <select name="type" id="MSO203B">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                    <li>EE200:
+                        <select name="type" id="EE200">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                    <li>ESC201:
+                        <select name="type" id="ESC201">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                    <li>TA201:
+                        <select name="type" id="TA201">
+                            <option>Select Grade</option>
+                            <option value="10" class="A/A*"><a href="#">A/A*</a></option>
+                            <option value="9" class="B+"><a href="#">B+</a></option>
+                            <option value="8" class="B"><a href="#">B</a></option>
+                            <option value="7" class="C+"><a href="#">C+</a></option>
+                            <option value="6" class="C"><a href="#">C</a></option>
+                            <option value="5" class="D+"><a href="#">D+</a></option>
+                            <option value="4" class="D"><a href="#">D</a></option>
+                            <option value="0" class="E"><a href="#">E</a></option>
+                            <option value="0" class="F"><a href="#">F</a></option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <center>
+            <button id="btn" class="btn">Get SPI</button>
+        </center>
+    </div>
+    <div class="spi">
+    </div>
+    <center>
+        <button id="btn1" class="btn">Get CPI</button>
+    </center>
+    <div class="cpi">
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
