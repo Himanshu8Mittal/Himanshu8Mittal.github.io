@@ -52,13 +52,11 @@ label{
 }
 select{
     width: 7vw;
-    height: 3vh;
+    height: 4vh;
     border-radius: 20px;
 }
 select:hover{
-    font-weight: bold;
-    color: rgb(22, 21, 21);
-    background-color: rgb(226, 172, 248);
+    font-weight: bolder;
 }
 #grades{
     display: none;
@@ -120,9 +118,25 @@ ul{
     justify-content: center;
     color: rgb(28 233 108);
 }
+footer{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+    padding-right: 90px;
+    color:  rgb(232, 214, 241);
+    text-align: right;
+}
 @media (max-width:675px){
     label{
         /* width: auto; */
         padding-left: 0px;
+    }
+    footer{
+        padding-right: 42px;
+    }
+    select{
+        width: 32vw;
+        height: 5vh;
     }
 }
