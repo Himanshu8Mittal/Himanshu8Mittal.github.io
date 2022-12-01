@@ -57,6 +57,8 @@ select{
 }
 select:hover{
     font-weight: bold;
+    color: rgb(22, 21, 21);
+    background-color: rgb(226, 172, 248);
 }
 #grades{
     display: none;
