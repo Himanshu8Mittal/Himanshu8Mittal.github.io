@@ -1,4 +1,5 @@
 let result=0;
+// Branch subject Visibility
 let sel=document.getElementById("dep");
 let array=[0];
 sel.addEventListener('change',()=>{
@@ -8,6 +9,10 @@ sel.addEventListener('change',()=>{
     let gradece=document.getElementById('gradesce')
     let grademse=document.getElementById('gradesmse')
     let gradecse=document.getElementById('gradescse')
+    let gradeche=document.getElementById('gradesche')
+    let gradebse=document.getElementById('gradesbse')
+    let gradesds=document.getElementById('gradessds')
+    let grademnc=document.getElementById('gradesmnc')
     console.log(sel.value);
     array[0]=parseInt(sel.value);
     console.log(array[0]);
@@ -18,6 +23,10 @@ sel.addEventListener('change',()=>{
         gradece.style.display='none';
         grademse.style.display='none';
         gradecse.style.display='none';
+        gradeche.style.display='none';
+        gradebse.style.display='none';
+        gradesds.style.display='none';
+        grademnc.style.display='none';
     }
     else if (array[0]==9){
         grad.style.display='none';
@@ -26,6 +35,10 @@ sel.addEventListener('change',()=>{
         gradece.style.display='none';
         grademse.style.display='none';
         gradecse.style.display='none';
+        gradeche.style.display='none';
+        gradebse.style.display='none';
+        gradesds.style.display='none';
+        grademnc.style.display='none';
     }
     else if (array[0]==8){
         grad.style.display='none';
@@ -34,6 +47,10 @@ sel.addEventListener('change',()=>{
         gradece.style.display='none';
         grademse.style.display='none';
         gradecse.style.display='none';
+        gradeche.style.display='none';
+        gradebse.style.display='none';
+        gradesds.style.display='none';
+        grademnc.style.display='none';
     }
     else if (array[0]==7){
         gradece.style.display='flex';
@@ -42,6 +59,10 @@ sel.addEventListener('change',()=>{
         grademe.style.display='none';
         grademse.style.display='none';
         gradecse.style.display='none';
+        gradeche.style.display='none';
+        gradebse.style.display='none';
+        gradesds.style.display='none';
+        grademnc.style.display='none';
     }
     else if (array[0]==6){
         gradece.style.display='none';
@@ -50,6 +71,10 @@ sel.addEventListener('change',()=>{
         grademe.style.display='none';
         grademse.style.display='flex';
         gradecse.style.display='none';
+        gradeche.style.display='none';
+        gradebse.style.display='none';
+        gradesds.style.display='none';
+        grademnc.style.display='none';
     }
     else if (array[0]==5){
         gradece.style.display='none';
@@ -58,6 +83,58 @@ sel.addEventListener('change',()=>{
         grademe.style.display='none';
         grademse.style.display='none';
         gradecse.style.display='flex';
+        gradeche.style.display='none';
+        gradebse.style.display='none';
+        gradesds.style.display='none';
+        grademnc.style.display='none';
+    }
+    else if (array[0]==4){
+        gradece.style.display='none';
+        grad.style.display='none';
+        gradeee.style.display='none';
+        grademe.style.display='none';
+        grademse.style.display='none';
+        gradecse.style.display='none';
+        gradeche.style.display='flex';
+        gradebse.style.display='none';
+        gradesds.style.display='none';
+        grademnc.style.display='none';
+    }
+    else if (array[0]==3){
+        gradece.style.display='none';
+        grad.style.display='none';
+        gradeee.style.display='none';
+        grademe.style.display='none';
+        grademse.style.display='none';
+        gradecse.style.display='none';
+        gradeche.style.display='none';
+        gradebse.style.display='flex';
+        gradesds.style.display='none';
+        grademnc.style.display='none';
+    }
+    else if (array[0]==2){
+        gradece.style.display='none';
+        grad.style.display='none';
+        gradeee.style.display='none';
+        grademe.style.display='none';
+        grademse.style.display='none';
+        gradecse.style.display='none';
+        gradeche.style.display='none';
+        gradebse.style.display='none';
+        gradesds.style.display='flex';
+        grademnc.style.display='none';
+    }
+    else if (array[0]==1){
+        gradece.style.display='none';
+        grad.style.display='none';
+        gradeee.style.display='none';
+        grademe.style.display='none';
+        grademse.style.display='none';
+        gradecse.style.display='none';
+        gradeche.style.display='none';
+        gradebse.style.display='none';
+        gradesds.style.display='none';
+        grademnc.style.display='flex';
     }
     else{
         grad.style.display='none';
@@ -66,10 +143,15 @@ sel.addEventListener('change',()=>{
         gradece.style.display='none';
         grademse.style.display='none';
         gradecse.style.display='none';
+        gradeche.style.display='none';
+        gradebse.style.display='none';
+        gradesds.style.display='none';
+        grademnc.style.display='none';
     }
 })
 let s = 0;
 let arr = [0, 0, 0, 0, 0, 0, 0];
+// AE
 let a = document.getElementById('ESO204')
 a.addEventListener('change', () => {
     let p = parseInt(a.value) * 11;
@@ -105,6 +187,7 @@ g.addEventListener('change', () => {
     let w = parseInt(g.value) * 11;
     arr[6] = w;
 });
+// EE
 let cred;
 let ae = document.getElementById('ESO')
 ae.addEventListener('change', () => {
@@ -140,6 +223,7 @@ fe.addEventListener('change', () => {
     let ta = parseInt(fe.value) * 6;
     arr[5] = ta;
 });
+// ME
 let aME=document.getElementById('ESC201ME')
 aME.addEventListener('change', () => {
     let pme = parseInt(aME.value) * 14;
@@ -175,6 +259,7 @@ gME.addEventListener('change', () => {
     let wme = parseInt(gME.value) * 5;
     arr[6] = wme;
 });
+// CE
 let aCE=document.getElementById('ESO204CE')
 aCE.addEventListener('change', () => {
     let pce = parseInt(aCE.value) * 11;
@@ -205,6 +290,7 @@ gCE.addEventListener('change', () => {
     let wce = parseInt(gCE.value) * 11;
     arr[6] = wce;
 });
+// MSE
 let aMSE=document.getElementById('ESO205MSE')
 aMSE.addEventListener('change', () => {
     let pmse = parseInt(aMSE.value) * 14;
@@ -235,6 +321,7 @@ gMSE.addEventListener('change', () => {
     let wmse = parseInt(gMSE.value) * 11;
     arr[6] = wmse;
 });
+// CSE
 let credcs;
 let aCSE= document.getElementById('ESOCSE')
 aCSE.addEventListener('change', () => {
@@ -265,6 +352,130 @@ fCSE.addEventListener('change', () => {
     let tcse = parseInt(fCSE.value) * 6;
     arr[5] = tcse;
 });
+// CHE
+let aCHE=document.getElementById('ESO201CHE')
+aCHE.addEventListener('change', () => {
+    let pche = parseInt(aCHE.value) * 11;
+    arr[0] = pche
+});
+let bCHE = document.getElementById('CHE251CHE')
+bCHE.addEventListener('change', () => {
+    let qche = parseInt(bCHE.value) * 9;
+    arr[1] = qche;
+});
+let dCHE = document.getElementById('ESO208CHE')
+dCHE.addEventListener('change', () => {
+    let tche = parseInt(dCHE.value) * 11;
+    arr[3] = tche;
+});
+let fCHE = document.getElementById('TA202CHE')
+fCHE.addEventListener('change', () => {
+    let vche = parseInt(fCHE.value) * 6;
+    arr[5] = vche;
+});
+let gCHE = document.getElementById('HSSCHE')
+gCHE.addEventListener('change', () => {
+    let wche = parseInt(gCHE.value) * 11;
+    arr[6] = wche;
+});
+// BSE
+let credbs;
+let aBSE= document.getElementById('ESOBSE')
+aBSE.addEventListener('change', () => {
+    credbs = parseInt(aBSE.value);
+});
+let aBSEg = document.getElementById('ESO grade BSE')
+aBSEg.addEventListener('change', () => {
+    let esobse = parseInt(aBSEg.value) * credbs;
+    arr[0] = esobse;
+});
+let bBSE = document.getElementById('ESO206BSE')
+bBSE.addEventListener('change', () => {
+    let eso206bse = parseInt(bBSE.value) * 9;
+    arr[1] = eso206bse;
+});
+let cBSE = document.getElementById('BSE211BSE')
+cBSE.addEventListener('change', () => {
+    let bs211bse = parseInt(cBSE.value) * 9;
+    arr[2] = bs211bse;
+});
+let eBSE = document.getElementById('ESC201BSE')
+eBSE.addEventListener('change', () => {
+    let escbse = parseInt(eBSE.value) * 14;
+    arr[4] = escbse;
+});
+let fBSE = document.getElementById('TA201BSE')
+fBSE.addEventListener('change', () => {
+    let tbse = parseInt(fBSE.value) * 6;
+    arr[5] = tbse;
+});
+// SDS
+let aSDS = document.getElementById('MTH301SDS')
+aSDS.addEventListener('change', () => {
+    let psds = parseInt(aSDS.value) * 11;
+    arr[0] = psds
+});
+let bSDS = document.getElementById('MSO202SDS')
+bSDS.addEventListener('change', () => {
+    let qsds = parseInt(bSDS.value) * 6;
+    arr[1] = qsds
+});
+let cSDS = document.getElementById('MSO205SDS')
+cSDS.addEventListener('change', () => {
+    let rsds = parseInt(cSDS.value) * 11;
+    arr[2] = rsds;
+});
+let dSDS = document.getElementById('MTH207SDS')
+dSDS.addEventListener('change', () => {
+    let tsds = parseInt(dSDS.value) * 6;
+    arr[3] = tsds;
+});
+let eSDS = document.getElementById('MTH208SDS')
+eSDS.addEventListener('change', () => {
+    let usds = parseInt(eSDS.value) * 5;
+    arr[4] = usds;
+});
+let fSDS = document.getElementById('TA201SDS')
+fSDS.addEventListener('change', () => {
+    let vsds = parseInt(fSDS.value) * 6;
+    arr[5] = vsds;
+});
+let gSDS = document.getElementById('ESC201SDS')
+gSDS.addEventListener('change', () => {
+    let wsds = parseInt(gSDS.value) * 14;
+    arr[6] = wsds;
+});
+// MNC
+let credmnc;
+let aMNC = document.getElementById('ESOMNC')
+aMNC.addEventListener('change', () => {
+    credmnc = parseInt(aMNC.value);
+});
+let aMNCg = document.getElementById('ESO grade MNC')
+aMNCg.addEventListener('change', () => {
+    let esomnc = parseInt(aMNCg.value) * credmnc;
+    arr[0] = esomnc;
+});
+let bMNC = document.getElementById('MTH201MNC')
+bMNC.addEventListener('change', () => {
+    let mth201mnc = parseInt(bMNC.value) * 11;
+    arr[1] = mth201mnc;
+});
+let cMNC = document.getElementById('MTH302MNC')
+cMNC.addEventListener('change', () => {
+    let mth302mnc = parseInt(cMNC.value) * 11;
+    arr[2] = mth302mnc;
+});
+let eMNC = document.getElementById('ESC201MNC')
+eMNC.addEventListener('change', () => {
+    let escmnc = parseInt(eMNC.value) * 14;
+    arr[4] = escmnc;
+});
+let fMNC = document.getElementById('TA201MNC')
+fMNC.addEventListener('change', () => {
+    let tamnc = parseInt(fMNC.value) * 6;
+    arr[5] = tamnc;
+});
 let btn=document.getElementById("btn");
 btn.addEventListener('click',function(){
     let i = 0;
@@ -289,6 +500,18 @@ btn.addEventListener('click',function(){
     }
     if (array[0]==5){
         res=s/(credcs+41);
+    }
+    if (array[0]==4){
+        res=s/48;
+    }
+    if (array[0]==3){
+        res=s/(credbs+38);
+    }
+    if (array[0]==2){
+        res=s/59;
+    }
+    if (array[0]==1){
+        res=s/(credmnc+42);
     }
     result=res.toFixed(2);
     document.querySelector(".spi").innerHTML="Your's SPI is:- "+result;
@@ -323,6 +546,20 @@ bn.addEventListener('click',function(){
     }
     if (array[0]==5){
         fincpi=(prevcpi*98+(parseFloat(result)*(credcs+41)))/(98+credcs+41);
+    }
+    if (array[0]==4){
+        console.log(prevcpi);
+        fincpi=((prevcpi*98)+(parseFloat(result)*48))/146;
+    }
+    if (array[0]==3){
+        fincpi=(prevcpi*98+(parseFloat(result)*(credbs+38)))/(98+credbs+38);
+    }
+    if (array[0]==2){
+        console.log(prevcpi);
+        fincpi=((prevcpi*98)+(parseFloat(result)*59))/157;
+    }
+    if (array[0]==1){
+        fincpi=(prevcpi*98+(parseFloat(result)*(credmnc+42)))/(98+credmnc+42);
     }
     if (array[0]==0){
         alert("Please select your Department");
