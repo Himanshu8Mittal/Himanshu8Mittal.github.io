@@ -58,12 +58,7 @@ select{
 select:hover{
     font-weight: bolder;
 }
-#grades{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-#gradesee{
+#grades, #gradesee, #gradesme, #gradesce, #gradesmse, #gradescse{
     display: none;
     flex-direction: column;
     align-items: center;
@@ -76,13 +71,7 @@ input{
 ul{
     list-style: none;
 }
-#grades ul li{
-    padding: 20px;
-    font-size: 20px;
-    color: rgb(100, 180, 250);
-    font-weight: bold;
-}
-#gradesee ul li{
+#grades ul li, #gradesee ul li, #gradesme ul li, #gradesce ul li,#gradesmse ul li, #gradescse ul li{
     padding: 20px;
     font-size: 20px;
     color: rgb(100, 180, 250);
