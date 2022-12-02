@@ -139,4 +139,12 @@ footer{
         width: 32vw;
         height: 4vh;
     }
+    #spicpi::before{
+        content: "\a";
+        white-space: pre;
+    }
+    #depp::before{
+        content: "\a";
+        white-space: pre;
+    }
 }
