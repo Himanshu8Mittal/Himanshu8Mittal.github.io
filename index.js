@@ -13,6 +13,7 @@ sel.addEventListener('change',()=>{
     let gradebse=document.getElementById('gradesbse')
     let gradesds=document.getElementById('gradessds')
     let grademnc=document.getElementById('gradesmnc')
+    let gradephy=document.getElementById('gradesphy')
     console.log(sel.value);
     array[0]=parseInt(sel.value);
     console.log(array[0]);
@@ -27,6 +28,7 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='none';
         gradesds.style.display='none';
         grademnc.style.display='none';
+        gradephy.style.display='none';
     }
     else if (array[0]==9){
         grad.style.display='none';
@@ -39,6 +41,7 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='none';
         gradesds.style.display='none';
         grademnc.style.display='none';
+        gradephy.style.display='none';
     }
     else if (array[0]==8){
         grad.style.display='none';
@@ -51,6 +54,7 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='none';
         gradesds.style.display='none';
         grademnc.style.display='none';
+        gradephy.style.display='none';
     }
     else if (array[0]==7){
         gradece.style.display='flex';
@@ -63,6 +67,7 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='none';
         gradesds.style.display='none';
         grademnc.style.display='none';
+        gradephy.style.display='none';
     }
     else if (array[0]==6){
         gradece.style.display='none';
@@ -75,6 +80,7 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='none';
         gradesds.style.display='none';
         grademnc.style.display='none';
+        gradephy.style.display='none';
     }
     else if (array[0]==5){
         gradece.style.display='none';
@@ -87,6 +93,7 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='none';
         gradesds.style.display='none';
         grademnc.style.display='none';
+        gradephy.style.display='none';
     }
     else if (array[0]==4){
         gradece.style.display='none';
@@ -99,6 +106,7 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='none';
         gradesds.style.display='none';
         grademnc.style.display='none';
+        gradephy.style.display='none';
     }
     else if (array[0]==3){
         gradece.style.display='none';
@@ -111,6 +119,7 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='flex';
         gradesds.style.display='none';
         grademnc.style.display='none';
+        gradephy.style.display='none';
     }
     else if (array[0]==2){
         gradece.style.display='none';
@@ -123,6 +132,7 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='none';
         gradesds.style.display='flex';
         grademnc.style.display='none';
+        gradephy.style.display='none';
     }
     else if (array[0]==1){
         gradece.style.display='none';
@@ -135,6 +145,20 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='none';
         gradesds.style.display='none';
         grademnc.style.display='flex';
+        gradephy.style.display='none';
+    }
+    else if (array[0]==11){
+        gradece.style.display='none';
+        grad.style.display='none';
+        gradeee.style.display='none';
+        grademe.style.display='none';
+        grademse.style.display='none';
+        gradecse.style.display='none';
+        gradeche.style.display='none';
+        gradebse.style.display='none';
+        gradesds.style.display='none';
+        grademnc.style.display='none';
+        gradephy.style.display='flex';
     }
     else{
         grad.style.display='none';
@@ -147,6 +171,7 @@ sel.addEventListener('change',()=>{
         gradebse.style.display='none';
         gradesds.style.display='none';
         grademnc.style.display='none';
+        gradephy.style.display='none';
     }
 })
 let s = 0;
@@ -476,6 +501,42 @@ fMNC.addEventListener('change', () => {
     let tamnc = parseInt(fMNC.value) * 6;
     arr[5] = tamnc;
 });
+// PHY
+let credphy;
+let aPHY = document.getElementById('ESO-1')
+aPHY.addEventListener('change', () => {
+    credphy = parseInt(aPHY.value);
+});
+let aPH = document.getElementById('ESO grade-1')
+aPH.addEventListener('change', () => {
+    let esoph = parseInt(aPH.value) * credphy;
+    arr[0] = esoph;
+});
+let credphy2;
+let aPHY2 = document.getElementById('ESO-2')
+aPHY2.addEventListener('change', () => {
+    credphy2 = parseInt(aPHY2.value);
+});
+let aPH2 = document.getElementById('ESO grade-2')
+aPH2.addEventListener('change', () => {
+    let esoph2 = parseInt(aPH2.value) * credphy2;
+    arr[1] = esoph2;
+});
+let dPH = document.getElementById('PHY224PHY')
+dPH.addEventListener('change', () => {
+    let phy224ph = parseInt(dPH.value) * 12;
+    arr[3] = phy224ph;
+});
+let ePH = document.getElementById('HSSPHY')
+ePH.addEventListener('change', () => {
+    let hssph = parseInt(ePH.value) * 11;
+    arr[4] = hssph;
+});
+let fPH = document.getElementById('TA202PHY')
+fPH.addEventListener('change', () => {
+    let taph = parseInt(fPH.value) * 6;
+    arr[5] = taph;
+});
 let btn=document.getElementById("btn");
 btn.addEventListener('click',function(){
     let i = 0;
@@ -512,6 +573,9 @@ btn.addEventListener('click',function(){
     }
     if (array[0]==1){
         res=s/(credmnc+42);
+    }
+    if (array[0]==11){
+        res=s/(credphy+credphy2+29);
     }
     result=res.toFixed(2);
     document.querySelector(".spi").innerHTML="Your's SPI is:- "+result;
@@ -560,6 +624,9 @@ bn.addEventListener('click',function(){
     }
     if (array[0]==1){
         fincpi=(prevcpi*98+(parseFloat(result)*(credmnc+42)))/(98+credmnc+42);
+    }
+    if (array[0]==11){
+        fincpi=(prevcpi*98+(parseFloat(result)*(credphy+credphy2+29)))/(98+credphy+credphy2+29);
     }
     if (array[0]==0){
         alert("Please select your Department");

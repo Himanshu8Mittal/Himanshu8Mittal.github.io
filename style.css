@@ -58,7 +58,7 @@ select{
 select:hover{
     font-weight: bolder;
 }
-#grades, #gradesee, #gradesme, #gradesce, #gradesmse, #gradescse, #gradesche, #gradesbse, #gradessds, #gradesmnc{
+#grades, #gradesee, #gradesme, #gradesce, #gradesmse, #gradescse, #gradesche, #gradesbse, #gradessds, #gradesmnc, #gradesphy{
     display: none;
     flex-direction: column;
     align-items: center;
@@ -71,7 +71,7 @@ input{
 ul{
     list-style: none;
 }
-#grades ul li, #gradesee ul li, #gradesme ul li, #gradesce ul li,#gradesmse ul li, #gradescse ul li, #gradesche ul li, #gradesbse ul li, #gradessds ul li, #gradesmnc ul li{
+#grades ul li, #gradesee ul li, #gradesme ul li, #gradesce ul li,#gradesmse ul li, #gradescse ul li, #gradesche ul li, #gradesbse ul li, #gradessds ul li, #gradesmnc ul li, #gradesphy ul li{
     padding: 20px;
     font-size: 20px;
     color: rgb(100, 180, 250);
